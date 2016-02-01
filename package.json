@@ -1,0 +1,24 @@
+{
+  "name": "techcon-2016-piwebapi-beginners",
+  "version": "1.0.0",
+  "description": "This is the lab for 'PI Web API for Beginners' in TechCon 2016.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Daphne Ng",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-ng/techcon-2016-piwebapi-beginners.git"
+  },
+  "bugs": {
+    "url": "https://github.com/d-ng/techcon-2016-piwebapi-beginners/issues"
+  },
+  "homepage": "https://github.com/d-ng/techcon-2016-piwebapi-beginners#readme"
+}
