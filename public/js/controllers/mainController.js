@@ -116,8 +116,17 @@ app.controller('MainController',['$scope', 'piWebApiREST', function($scope, piWe
     // update state population
     piWebApiREST.getAttributeByPath(stateName, "Population").then(function(data) {
       piWebApiREST.getValue(data.WebId).then(function (data) {
+        // Sample response
+        // {
+        //   "Timestamp": "2014-07-22T14:00:00Z",
+        //   "Value": 2.3,
+        //   "UnitsAbbreviation": "m",
+        //   "Good": "true",
+        //   "Questionable": "false",
+        //   "Substituted": "false"
+        // }
         // TODO: Exercise 3a
-        
+
         // TODO: Exercise 3a (end)
       });
     });
@@ -140,6 +149,15 @@ app.controller('MainController',['$scope', 'piWebApiREST', function($scope, piWe
   // update "Most recent visit duration"
   var updateCurrentValue = function(webId) {
     piWebApiREST.getStreamValue(webId).then(function (data) {
+      // Sample response
+      // {
+      //   "Timestamp": "2014-07-22T14:00:00Z",
+      //   "Value": 2.3,
+      //   "UnitsAbbreviation": "m",
+      //   "Good": "true",
+      //   "Questionable": "false",
+      //   "Substituted": "false"
+      // }
       // TODO: Exercise 3b
 
       // TODO: Exercise 3b (end)
@@ -149,6 +167,34 @@ app.controller('MainController',['$scope', 'piWebApiREST', function($scope, piWe
   // update "Site visit duration statistics"
   var updateSummaryValues = function(webId) {
     piWebApiREST.getSummary(webId, startTimePI).then(function (data) {
+      // Sample response
+      // {
+      //   "Links": {},
+      //   "Items": [
+      //     {
+      //       "Type": "Total",
+      //       "Value": {
+      //         "Timestamp": "2014-07-22T14:00:00Z",
+      //         "Value": 2.3,
+      //         "UnitsAbbreviation": "m",
+      //         "Good": "true",
+      //         "Questionable": "false",
+      //         "Substituted": "false"
+      //       }
+      //     },
+      //     {
+      //       "Type": "Total",
+      //       "Value": {
+      //         "Timestamp": "2014-07-22T14:00:00Z",
+      //         "Value": 2.3,
+      //         "UnitsAbbreviation": "m",
+      //         "Good": "true",
+      //         "Questionable": "false",
+      //         "Substituted": "false"
+      //       }
+      //     }
+      //   ]
+      // }
       // TODO: Exercise 3c
 
       // TODO: Exericse 3c (end)
@@ -158,6 +204,27 @@ app.controller('MainController',['$scope', 'piWebApiREST', function($scope, piWe
   // update "Trend"
   var updatePlotValues = function(webId) {
     piWebApiREST.getPlot(webId, startTimePI, plotWidth).then(function(data) {
+      // Sample response
+      // {
+      //   "Links": {},
+      //   "UnitsAbbreviation": "m",
+      //   "Items": [
+      //     {
+      //       "Timestamp": "2014-07-22T14:00:00Z",
+      //       "Value": 2.3,
+      //       "Good": "true",
+      //       "Questionable": "false",
+      //       "Substituted": "false"
+      //     },
+      //     {
+      //       "Timestamp": "2014-07-22T14:00:00Z",
+      //       "Value": 2.3,
+      //       "Good": "true",
+      //       "Questionable": "false",
+      //       "Substituted": "false"
+      //     }
+      //   ]
+      // }
       // TODO: Exercise 3d
 
       // TODO: Exericse 3d (end)
