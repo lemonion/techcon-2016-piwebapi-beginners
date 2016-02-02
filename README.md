@@ -16,7 +16,9 @@ In addition, we will use PI Web API Indexed Search to allow user to search and s
 The application is built using HTML/CSS/Javascript using AngularJS 1 as the frontend JavaScript framework, and hosted using Node.js. 
 
 ## Getting started
-Feel free to take a look at the code as is. You can also download the files or fork and clone the repository. To install all necessary dependent components, open the techcon-2016-piwebapi-beginners root folder and run "npm install". This will install the dependent component Express which is used to host the site.
+Feel free to take a look at the code as is. You can also download the files or fork and clone the repository. To install all necessary dependent components, open the techcon-2016-piwebapi-beginners root folder and run `npm install`. This will install the dependent component Express which is used to host the site.
+
+To get started, open a command prompt, go to the project folder, and run `node server.js`. You can then use a browser to see the web application on http://localhost:8080.
 
 ## To reproduce the lab environment
 You will need running instances of PI Data Archive, PI Asset Framework and PI Web API with the PI Web API Indexed Search component installed. Set up Kerberos as the authentication method to allow the PI Web API Crawler to properly index the AF Database.
