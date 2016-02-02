@@ -1,5 +1,5 @@
 # techcon-2016-piwebapi-beginners
-This is the lab for 'PI Web API for Beginners' in TechCon 2016. 
+This is the lab for 'PI Web API for Beginners' in OSIsoft TechCon 2016. 
 
 ## Introduction
 This is a single-page web application that shows statewide web traffic data retrieved from the PI System. When user clicks on a state, PI Web API will get following information to populate on the right side:
