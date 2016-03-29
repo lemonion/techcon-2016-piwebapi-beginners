@@ -79,7 +79,7 @@ app.factory('piWebApiREST', ['$http', function($http) {
     var url = urlHelper(
       baseUrl,
       'search/query',
-      [ 'q=' + query, 'scope=af:\\\\{0}\\{1}'.format(afServer, afDatabase), 'fields:name; attributes; webid' ]
+      [ 'q=' + query, 'scope=af:\\\\{0}\\{1}'.format(afServer, afDatabase), 'fields=name; attributes; webid' ]
     );
     // TODO: Exercise 3e (end)
     return $http.get(url).then(function (response) {
